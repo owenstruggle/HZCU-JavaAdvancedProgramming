@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.owem.experiment04.CalculatorController">
+   <center>
+      <BorderPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <top>
+            <GridPane prefHeight="80.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <Button mnemonicParsing="false" onAction="#OnBackspaceButton" prefHeight="126.0" prefWidth="200.0" text="Backspace" textFill="RED">
+                     <font>
+                        <Font name="System Bold" size="30.0" />
+                     </font>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#OnCEButton" prefHeight="123.0" prefWidth="200.0" text="CE" textFill="RED" GridPane.columnIndex="1">
+                     <font>
+                        <Font name="System Bold" size="30.0" />
+                     </font>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#OnCButton" prefHeight="139.0" prefWidth="200.0" text="C" textFill="RED" GridPane.columnIndex="2">
+                     <font>
+                        <Font name="System Bold" size="30.0" />
+                     </font>
+                  </Button>
+               </children>
+            </GridPane>
+         </top>
+         <center>
+            <GridPane BorderPane.alignment="CENTER">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <Button mnemonicParsing="false" onAction="#OnSevenButton" prefHeight="184.0" prefWidth="234.0" text="7" textFill="#0011ff">
+                     <font>
+                        <Font name="System Bold" size="30.0" />
+                     </font>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#OnEightButton" prefHeight="185.0" prefWidth="226.0" text="8" textFill="#0011ff" GridPane.columnIndex="1">
+                     <font>
+                        <Font name="System Bold" size="30.0" />
+                     </font>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#OnNineButton" prefHeight="195.0" prefWidth="235.0" text="9" textFill="#0011ff" GridPane.columnIndex="2">
+                     <font>
+                        <Font name="System Bold" size="30.0" />
+                     </font>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#OnDivideButton" prefHeight="199.0" prefWidth="228.0" text="/" textFill="RED" GridPane.columnIndex="3">
+                     <font>
+                        <Font name="System Bold" size="30.0" />
+                     </font>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#OnSqrtButton" prefHeight="170.0" prefWidth="171.0" text="sqrt" textFill="#0011ff" GridPane.columnIndex="4">
+                     <font>
+                        <Font name="System Bold" size="30.0" />
+                     </font>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#OnFourButton" prefHeight="177.0" prefWidth="231.0" text="4" textFill="#0011ff" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="System Bold" size="30.0" />
+                     </font>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#OnFiveButton" prefHeight="188.0" prefWidth="192.0" text="5" textFill="#0011ff" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="System Bold" size="30.0" />
+                     </font>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#OnSixButton" prefHeight="184.0" prefWidth="184.0" text="6" textFill="#0011ff" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="System Bold" size="30.0" />
+                     </font>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#OnMultiplicationButton" prefHeight="173.0" prefWidth="178.0" text="*" textFill="RED" GridPane.columnIndex="3" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="System Bold" size="30.0" />
+                     </font>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#OnPercentButton" prefHeight="155.0" prefWidth="186.0" text="\%" textFill="#0011ff" GridPane.columnIndex="4" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="System Bold" size="30.0" />
+                     </font>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#OnThreeButton" prefHeight="140.0" prefWidth="193.0" text="3" textFill="#0011ff" GridPane.rowIndex="2">
+                     <font>
+                        <Font name="System Bold" size="30.0" />
+                     </font>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#OnTwoButton" prefHeight="172.0" prefWidth="195.0" text="2" textFill="#0011ff" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                     <font>
+                        <Font name="System Bold" size="30.0" />
+                     </font>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#OnOneButton" prefHeight="160.0" prefWidth="206.0" text="1" textFill="#0011ff" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                     <font>
+                        <Font name="System Bold" size="30.0" />
+                     </font>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#OnSubtractButton" prefHeight="145.0" prefWidth="180.0" text="-" textFill="RED" GridPane.columnIndex="3" GridPane.rowIndex="2">
+                     <font>
+                        <Font name="System Bold" size="30.0" />
+                     </font>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#OnOneOfButton" prefHeight="160.0" prefWidth="156.0" text="1/x" textFill="#0011ff" GridPane.columnIndex="4" GridPane.rowIndex="2">
+                     <font>
+                        <Font name="System Bold" size="30.0" />
+                     </font>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#OnZeroButton" prefHeight="129.0" prefWidth="206.0" text="0" textFill="#0011ff" GridPane.rowIndex="3">
+                     <font>
+                        <Font name="System Bold" size="30.0" />
+                     </font>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#OnPositiveOrNegativeButton" prefHeight="151.0" prefWidth="189.0" text="+/-" textFill="#0011ff" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                     <font>
+                        <Font name="System Bold" size="30.0" />
+                     </font>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#OnPointButton" prefHeight="176.0" prefWidth="184.0" text="." textFill="#0011ff" GridPane.columnIndex="2" GridPane.rowIndex="3">
+                     <font>
+                        <Font name="System Bold" size="30.0" />
+                     </font>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#OnPlusButton" prefHeight="165.0" prefWidth="169.0" text="+" textFill="RED" GridPane.columnIndex="3" GridPane.rowIndex="3">
+                     <font>
+                        <Font name="System Bold" size="30.0" />
+                     </font>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#OnEqualButton" prefHeight="216.0" prefWidth="226.0" text="=" textFill="RED" GridPane.columnIndex="4" GridPane.rowIndex="3">
+                     <font>
+                        <Font name="System Bold" size="30.0" />
+                     </font>
+                  </Button>
+               </children>
+            </GridPane>
+         </center>
+      </BorderPane>
+   </center>
+   <top>
+      <Label fx:id="numberText" alignment="CENTER_RIGHT" contentDisplay="CENTER" prefHeight="75.0" prefWidth="881.0" text="0" textAlignment="RIGHT" BorderPane.alignment="CENTER">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+   </top>
+</BorderPane>
