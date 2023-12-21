@@ -1,2 +1,3 @@
 # JavaAdvancedProgramming
-这是 ZUCC Java 高级程序设计课程作业
+
+这是 浙大城市学院（HZCU） Java 高级程序设计 日常作业
